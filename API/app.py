@@ -18,11 +18,11 @@ CORS(app, support_credentials=True)
 
 
 # * ---------- DATABASE CONFIG --------- *
-DATABASE_USER = os.environ['DATABASE_USER']
-DATABASE_PASSWORD = os.environ['DATABASE_PASSWORD']
-DATABASE_HOST = os.environ['DATABASE_HOST']
-DATABASE_PORT = os.environ['DATABASE_PORT']
-DATABASE_NAME = os.environ['DATABASE_NAME']
+DATABASE_USER = 'medha'#os.environ['DATABASE_USER']
+DATABASE_PASSWORD = 'pass'#os.environ['DATABASE_PASSWORD']
+DATABASE_HOST = 'localhost'#os.environ['DATABASE_HOST']
+DATABASE_PORT = '5432'#os.environ['DATABASE_PORT']
+DATABASE_NAME = 'demo'#os.environ['DATABASE_NAME']
 
 def DATABASE_CONNECTION():
     return psycopg2.connect(user=DATABASE_USER,
