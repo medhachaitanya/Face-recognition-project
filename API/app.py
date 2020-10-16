@@ -53,7 +53,7 @@ def get_receive_data():
             cursor.execute(user_saw_today_sql_query)
             result = cursor.fetchall()
             connection.commit()
-
+ 
             # If use is already in the DB for today:
             if result:
                print('user IN')
